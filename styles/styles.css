@@ -225,9 +225,7 @@ body {
     margin: 0;
     padding-left: 0;
     display: flex;
-    
     list-style: none;
-
     width: 1170px;
     height: 98px;
 }
@@ -268,7 +266,7 @@ body {
 
 }
 
-/*__________________Our business______________*/
+/*__________________Our business______________*/
 
 .our-business {
     margin-top: 118px;
