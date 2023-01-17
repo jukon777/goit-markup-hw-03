@@ -25,8 +25,6 @@ body {
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-
-    outline: 1px solid tomato;
 }
 
 /*_____________________Header___________________*/
@@ -156,11 +154,7 @@ body {
 
 .hero-title {
     margin: auto auto 30px auto;
-    /* padding: 200px 452px 280px; */
     width: 696px;
-    /* height: 120px; */
-    left: 452px;
-    top: 280px;
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
@@ -224,8 +218,6 @@ body {
     gap: 30px;
 }
 
-
-
 .describe-article {
     margin-top: 0;
     margin-bottom: 10px;
@@ -250,7 +242,6 @@ body {
 
     letter-spacing: 0.03em;
     color: var(--secondary-text-color);
-
 }
 
 /*__________________Our business______________*/
@@ -283,7 +274,6 @@ body {
 
 .our-business-item {
     list-style: none;
-    /* padding-right: 30px; */
 }
 
 /* __________________Our command________________ */
@@ -312,11 +302,6 @@ body {
     padding-left: 0;
     gap: 30px;
     list-style: none;
-}
-
-.our-command-item {
-    /* width: 270px; */
-    /* height: 368px; */
 }
 
 .our-name {
@@ -357,13 +342,10 @@ body {
 
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
-
 }
 
 /*__________________Footer__________________________*/
 .footer {
-    /* width: 1600px; */
-    /* height: 252px; */
     padding: 60px 0;
     background-color: var(--background-color);
 }
@@ -397,11 +379,10 @@ body {
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
-    
     letter-spacing: 0.03em;
 
     text-decoration:none;
-    color: #fff;
+    color: var(--title-color);
 }
 
 .address-item {
@@ -426,17 +407,8 @@ body {
 /*========================Portfolio==========================*/
 
 .portfolio {
-    margin: 94px 0 0 215px;
-
-    width: 1170px;
-    height: 1360px;
-}
-
-.portfolio-box {
-    margin: 94px 0 0 297px;
-    padding-left: 0;
-    width: 575px;
-    height: 54px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .portfolio-list {
@@ -444,7 +416,8 @@ body {
     padding-left: 0;
     list-style: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 8px;
 }
 
 .portf-button:hover,
@@ -472,13 +445,11 @@ body {
     background-color: var(--background-portfolio);
 }
 
-.portfolio-item {
-    padding-right: 8px;
-}
-
 .photo-list {
     margin-top: 34px;
+    margin-bottom: 0;
     padding-left: 0;
+
     list-style: none;
     display: flex;
     justify-content: space-between;
@@ -494,17 +465,13 @@ body {
 .photo-title {
     margin-left: 24px;
     margin-top: 20px;
-
-    width: 322px;
-    height: 36px;
-
+    /* width: 322px; */
+    /* height: 36px; */
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
 /* identical to box height, or 200% */
-
     letter-spacing: 0.06em;
-
     color: var(--primary-text-color);
 }
 
@@ -512,15 +479,10 @@ body {
     margin-left: 24px;
     margin-top: 4px;
 
-    width: 322px;
-    height: 30px;
-
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
 /* identical to box height, or 188% */
-
     letter-spacing: 0.03em;
-
     color: var(--secondary-text-color);
 }
