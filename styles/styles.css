@@ -15,15 +15,24 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--primary-text-color);
     background: var(--background-color-main);
-    margin: 0px;
+    margin: 0 auto;
+ 
     font-size: 14px;
+}
+
+.container {
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    outline: 1px solid tomato;
 }
 
 /*_____________________Header___________________*/
 .header {
-    width: 1600px;
-    height: 80px;
-    color: var(--title-color);
+    border-color: var(--background-color-main);
+    border: 1px solid #ECECEC;
 }
 
 .name-header {
@@ -47,12 +56,6 @@ body {
 }
 
 /*__________________Menu_____________________*/
-.container {
-    width: 1385px;
-    height: 80px;
-    padding-left: 215px;
-}
-
 .total-menu{
     display: flex;
     align-items: center;
@@ -63,14 +66,10 @@ body {
     align-items: center;
 }
 
-.menu .menu-list:not(:last-child) {
-    margin-right: 50px;
-}
-
 .menu-list,
 .menu-contacts {
     list-style: none;
-    margin: 0px;
+    margin: 0;
 }
 
 .menu-list {
@@ -79,14 +78,18 @@ body {
     display: flex;
     justify-content: flex-start; 
     flex-direction: row;
+    gap: 50px;
 }
 
 .menu-item {
     margin-left: 0px;
-    padding-right: 50px;
+    /* padding-right: 50px; */
+    
  }
 
 .link {
+    display: block;
+
     color: var(--primary-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
@@ -105,12 +108,13 @@ body {
 }
 
    /* Connection links */
-.contact-mail {
-    position: absolute;
-    width: 135px;
-    height: 16px;
-    left: 1078px;
-    top: 32px;    
+.menu-contacts {
+    display: flex;
+    align-items: center;
+    /* padding: 0; */
+    padding-left: 0;
+    margin-left: auto;
+    gap: 50px;
 }
 
 .contacts-mail {
@@ -120,25 +124,11 @@ body {
     color: var(--secondary-text-color);
 }
 
-.contact-tel {
-    position: absolute;
-    width: 122px;
-    height: 16px;
-    left: 1263px;
-    top: 32px;    
-}
-
 .contacts-tel {
     line-height: 16px;
     letter-spacing: 0.02em;
 
     color: var(--secondary-text-color);
-}
-
-.contacts-link {
-    color: var(--secondary-text-color);
-    line-height: 1.14;
-    letter-spacing: 0.02em;
 }
 
 .contacts-mail,
@@ -158,39 +148,37 @@ body {
 
  /*___________________Hero____________________*/
 .hero {
-    width: 1600px;
-    height: 600px;
-
+    padding-top: 200px;
+    padding-bottom: 200px;
+    /* padding-left: 452px; */
     background-color: var(--background-color);
 }
 
 .hero-title {
-    margin: 0;
-    padding: 200px 452px 280px;
+    margin: auto auto 30px auto;
+    /* padding: 200px 452px 280px; */
     width: 696px;
-    height: 120px;
+    /* height: 120px; */
     left: 452px;
     top: 280px;
-
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
     /* or 136% */
-
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-
     color: var(--title-color);
 }
 
     /* Button */
 .hero-button {
-    position: absolute;
     width: 216px;
     height: 50px;
-    left: 692px;
-    top: 430px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    text-align: center;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.8;
@@ -199,6 +187,8 @@ body {
     background-color: var(--background-button);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
+    border: none;
+    justify-content: center;
 }
 
 .hero button[type="button"]:hover,
@@ -210,10 +200,9 @@ body {
 /* ___________________Describe_________________________ */
 
 .describe {
-    width: 1170px;
-    height: 98px;
-    margin-left: 215px;
-    margin-top: 94px;
+    padding-left: 215px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .describe-title {
@@ -222,32 +211,25 @@ body {
 }
 
 .describe-list {
-    margin: 0;
+    margin: 0 auto;
     padding-left: 0;
     display: flex;
     list-style: none;
-    width: 1170px;
-    height: 98px;
+    gap: 30px;
 }
 
-.describe-item {
-    width: 270px;
-    margin-right: 30px;
-}
+
 
 .describe-article {
     margin-top: 0;
     margin-bottom: 10px;
-
-    width: 270px;
-    height: 16px;
-
+    /* width: 270px; */
+    /* height: 16px; */
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-
     color: var(--primary-text-color);
 }
 
