@@ -200,15 +200,21 @@ body {
 /* ___________________Describe_________________________ */
 
 .describe {
-    padding-left: 215px;
     padding-top: 94px;
     padding-bottom: 94px;
 }
 
-.describe-title {
-    content-visibility: hidden;
-    margin: 0;
-}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px; 
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px; }
 
 .describe-list {
     margin: 0 auto;
@@ -223,8 +229,7 @@ body {
 .describe-article {
     margin-top: 0;
     margin-bottom: 10px;
-    /* width: 270px; */
-    /* height: 16px; */
+
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -251,87 +256,67 @@ body {
 /*__________________Our business______________*/
 
 .our-business {
-    margin-top: 118px;
-
-    width: 1170px;
-    height: 386px;
+    padding-bottom: 94px;
 }
 
 .our-business-title {
-    margin: 0px;
-    margin-left: 617px;
     margin-bottom: 50px;
-
-    width: 366px;
-    height: 42px;
+    margin-top: 0;
 
     display: flex;
     justify-content: center;
-    
     font-size: 32px;
     line-height: 1.3;
     text-align: center;
     letter-spacing: 0.03em;
-    
     color: var(--primary-text-color);
 }
 
 .our-business-list {
-    margin: 0 0 0 215px;
-    padding-left: 0;
     display: flex;
-    /* flex-direction: row; */
-    list-style: none;
+    margin: 0;
+    padding-left: 0;
+
+    justify-content: center;
+    gap: 30px;
 }
 
 .our-business-item {
-    padding-right: 30px;
+    list-style: none;
+    /* padding-right: 30px; */
 }
 
 /* __________________Our command________________ */
 .our-command {
-    margin-top: 94px;
-
-    width: 1600px;
-    height: 648px;
+    padding-top: 94px;
+    padding-bottom: 94px;
 
     background-color: var(--background-portfolio);
 }
 
 .our-command-title {
-    padding-top: 94px;
-    padding-left: 668px;
-    margin: 0;
-
-    width: 264px;
-    height: 42px;
-
-    display: flex;
-    justify-content: center;
+    margin-bottom: 50px;
+    margin-top: 0;
 
     font-size: 32px;
     line-height: 1.3;
     text-align: center;
     letter-spacing: 0.03em;
-
     color: var(--primary-text-color);
 }
 
 .our-command-list {
-    margin: 50px 215px 94px;
-    padding-left: 0px;
-
     display: flex;
-    flex-direction: row;
-  
+    justify-content: center;
+    margin: 0;
+    padding-left: 0;
+    gap: 30px;
     list-style: none;
 }
 
 .our-command-item {
-    padding-right: 30px;
-
-    width: 270px;
-    height: 368px;
+    /* width: 270px; */
+    /* height: 368px; */
 }
 
 .our-name {
@@ -377,23 +362,14 @@ body {
 
 /*__________________Footer__________________________*/
 .footer {
-    width: 1600px;
-    height: 252px;
-
+    /* width: 1600px; */
+    /* height: 252px; */
+    padding: 60px 0;
     background-color: var(--background-color);
 }
 
-.footer-block {
-    padding-top: 60px;
-}
-
 .name-footer {
-    margin-left: 215px;
-    margin-top: 60px;
-
-    width: 145px;
-    height: 31px;
-
+    margin-bottom: 20px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -405,17 +381,9 @@ body {
 }
 
 .address-list {
-    margin-left: 215px;
-
     padding-left: 0px;
-
     list-style: none;
     font-style: normal;
-
-    width: 231px;
-    height: 81px;
-
-
     text-decoration:none;
 }
 
@@ -425,8 +393,6 @@ body {
 }
 
 .address-list a[href="https://goo.gl/maps/f6Jy9NrF3AqPm8kXA"] {
-    width: 231px;
-    height: 21px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -438,16 +404,16 @@ body {
     color: #fff;
 }
 
+.address-item {
+    margin-top: 9px;
+}
+
 .contact-link {
-    width: 231px;
-    height: 21px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     /* or 171% */
-
     letter-spacing: 0.03em;
-
     color: rgba(255, 255, 255, 0.6);
     text-decoration:none;
 }
