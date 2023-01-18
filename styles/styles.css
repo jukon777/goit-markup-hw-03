@@ -446,29 +446,34 @@ body {
 }
 
 .photo-list {
+    margin-top: 50px;
+    margin-bottom: 0;
+    padding: 0;
+
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 
     gap: 30px;
 }
 
 .photo-img {
+    box-sizing: border-box;
     background-color: var(--background-color-main);
     border: 1px solid #EEEEEE;
 }
 
 .photo-item {
-    margin-top: 34px;
-    margin-bottom: 0;
-    padding-left: 0;
+    
+    margin: 0;
+    padding: 20px 24px;
 }
 
 .photo-title {
-    margin-left: 24px;
-    margin-top: 20px;
-    /* width: 322px; */
-    /* height: 36px; */
+    margin-top: 0;
+    margin-bottom: 4px;
+
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
@@ -478,9 +483,7 @@ body {
 }
 
 .photo-text {
-    margin-left: 24px;
-    margin-top: 4px;
-
+    margin: 0;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.8;
