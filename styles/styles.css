@@ -462,13 +462,15 @@ body {
 .photo-img {
     box-sizing: border-box;
     background-color: var(--background-color-main);
-    border: 1px solid #EEEEEE;
+
 }
 
 .photo-item {
     
     margin: 0;
     padding: 20px 24px;
+
+    border: 1px solid #EEEEEE;
 }
 
 .photo-title {
