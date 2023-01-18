@@ -349,7 +349,6 @@ body {
 }
 
 .name-footer {
-    margin-bottom: 20px;
     font-family: 'Raleway';
     font-weight: 700;
     font-size: 26px;
@@ -357,10 +356,13 @@ body {
  /* identical to box height */
     letter-spacing: 0.03em;
     text-decoration: none;
-    color: #FFFFFF;
+    color: var(--title-color);
 }
 
 .address-list {
+    margin-top: 20px;
+    margin-bottom: 0;
+
     padding-left: 0px;
     list-style: none;
     font-style: normal;
@@ -383,7 +385,7 @@ body {
     color: var(--title-color);
 }
 
-.address-item {
+.address-link {
     margin-top: 9px;
 }
 
@@ -444,20 +446,22 @@ body {
 }
 
 .photo-list {
-    margin-top: 34px;
-    margin-bottom: 0;
-    padding-left: 0;
-
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    flex-flow: row wrap;
-    align-items: flex-end;
+    flex-wrap: wrap;
+
+    gap: 30px;
 }
 
 .photo-img {
-    background: #FFFFFF;
+    background-color: var(--background-color-main);
     border: 1px solid #EEEEEE;
+}
+
+.photo-item {
+    margin-top: 34px;
+    margin-bottom: 0;
+    padding-left: 0;
 }
 
 .photo-title {
